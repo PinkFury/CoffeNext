@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Account";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<body>
+    <center>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                <img src="@Url.Content("~/img/Sticker.jpg")" id="StickAc" class="my-auto">
+                <div>
+                <p class="lead">Здравствуйте, @ViewBag.UserName</p>
+                <p class="lead">У вас @ViewBag.Points баллов</p>
+                @Html.ActionLink("Выход","Logout", "Home", null, new {@class = "btn btn-primary"})
+                </div>
+                </div>
+            </div>
+        </div>
+    </center>
+</body>
+

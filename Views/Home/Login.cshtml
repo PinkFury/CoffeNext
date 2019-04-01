@@ -1,0 +1,35 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="@Url.Content("~/img/favicon1.png")" type="image/png">
+    <link href="@Url.Content("~/css/jojo.css")" rel="stylesheet" type="text/css">
+    <link href="@Url.Content("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css")" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>#ВкусноКофе - кофейня Москвы</title>
+</head>
+<body>
+    <center>
+        <form class="card card-block m-x-auto bg-faded form-width" action="/Home/Login" method="post">
+            <h3 class="m-b-1 text-xs-center" id="logHeader">Авторизация</h3>
+            <input class="form-control mx-auto" id="logUN" type="text" name="User_Name" placeholder="Логин" required>
+            <input class="form-control mx-auto" id="logPass" type="password" name="Password" placeholder="Пароль" required>
+            <div class="text-xs-center">
+                <input type="submit" class="btn btn-primary btn-lg btn-block mx-auto" id="LogBut" value="Войти на сайт">
+            </div>
+        </form>
+    </center>
+    <script src="@Url.Content("~/js/jojo.js")"></script>
+    <script src="@Url.Content("https://code.jquery.com/jquery-3.3.1.slim.min.js")" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="@Url.Content("https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js")" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="@Url.Content("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js")" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+</body>
+</html>

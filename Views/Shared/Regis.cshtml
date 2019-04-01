@@ -1,0 +1,66 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="@Url.Content("~/img/favicon1.png")" type="image/png">
+    <link href="@Url.Content("~/css/jojo.css")" rel="stylesheet" type="text/css">
+    <link href="@Url.Content("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css")" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>#ВкусноКофе - кофейня Москвы</title>
+</head>
+<body>
+    <header>
+        <div class="container" style="max-width: 69.5rem; margin-top:1.5rem;">
+            <div class="row bg-light">
+                <div class="col-2">
+                    <a href="@Url.Content("~/Home/Index")"><img src="@Url.Content("~/img/newlogo1.png")" width="75" height="72" alt="" id="logo"></a>
+                    <br>
+                </div>
+                <div class="col-10">
+                    <nav class="navbar navbar-expand-lg navbar-light  justify-content-end">
+                        <button class="navbar-toggler collapsed" type="button" style="max-height: 2.2rem;" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02" style="margin-top: 0.7rem;">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="@Url.Content("~/Home/Index")">Главная страница</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="@Url.Content("~/Home/Menu")">Меню</a>
+                                </li>
+                                <a class="nav-link" href="@Url.Content("~/Home/Adress")">Адреса</a>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link  dropdown-toggle" data-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                                        Обратная связь
+                                    </a>
+                                    <div class="collapse" id="collapseExample2">
+                                        <div class="nav-link collapseExample2" aria-labelledby="navbarDropdownMenuLink">
+                                            <a class="nav-link collapseExample2" href="#">Сотрудничество</a>
+                                            <a class="nav-link collapseExample2" href="#">Отзыв</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <center>
+        @RenderBody()
+    </center>
+    <script src="@Url.Content("https://code.jquery.com/jquery-3.3.1.slim.min.js")" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="@Url.Content("https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js")" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="@Url.Content("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js")" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="@Url.Content("~/Scripts/jquery.mask.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery.mask.min.js")"></script>
+    <script src="@Url.Content("~/js/jojo.js")"></script>
+</body>
+</html>

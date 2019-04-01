@@ -1,0 +1,35 @@
+﻿@model CoffeeNext.Models.RegisterModel
+@{
+    Layout = "~/Views/Shared/Regis.cshtml";
+}
+<!DOCTYPE html>
+
+<html>
+<body>
+    <div class="p-x-1 p-y-3" id="regDiv">
+        <form class="card card-block m-x-auto bg-faded form-width" id="RegisForm" method="post">
+            <legend class="m-b-1 text-xs-center">Регистрация</legend>
+            <input class="form-control" id="login" name="User_Name" type="text" placeholder="Логин" required />
+            <span class="input-group-addon"></span>
+            <span class="has-float-label">
+                <input class="form-control" id="Email" name="Email" type="email" placeholder="example@gmail.com" required />
+            </span>
+            <span class="has-float-label">
+                <input class="form-control" id="phone" name="PhoneNumber" placeholder='Номер Телефона' type="text" required />
+            </span>
+            <input class="form-control" id="pass" name="Password" type="password" placeholder="Пароль" onkeydown="Check_Password()" required />
+            <input class="form-control" id="passP" type="password" placeholder="Пароль повторно" onkeyup="Check_Password()" required />
+            <div class="alert alert-danger" role="alert" id="wrongPw">
+                Пароли должны совпадать!
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Получать новости</label>
+            </div>
+            <div class="text-xs-center">
+                <input type="submit" class="btn btn-primary btn-lg btn-block" id="RegBut" value="Зарегестрироваться" disabled>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
