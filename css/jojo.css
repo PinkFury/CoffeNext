@@ -4,6 +4,11 @@
   font-family: Pango;
   src: url(fonts/9424.ttf);
 }
+.AccIMG {
+    background-image: url(https://img.icons8.com/windows/45/000000/gender-neutral-user.png);
+    width:45px;
+    height:45px;
+}
 .navbar-light .navbar-nav .nav-link {
   color: #13a081 !important;
   font-size: 1.25rem;
