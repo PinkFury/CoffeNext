@@ -707,3 +707,11 @@ iframe{
     color: #13a081;
 }
 /* --------- "ACCOUNT" END --------- */
+#form_message {
+    min-height: 9rem;
+}
+
+.lead {
+    font-size: 140%;
+}
+/*----------COMMUNICATE END -------- */
