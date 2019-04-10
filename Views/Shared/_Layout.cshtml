@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 @using CoffeeNext.Controllers;
 @using CoffeeNext.Models;
 <html>
@@ -26,6 +26,14 @@
                             <span></span>
                             <span></span>
                         </button>
+                        @if (User.Identity.IsAuthenticated == true)
+                        {
+                        <button class="navbar-toggler collapsed" style="border: none; opacity: 0.78; ">@Html.ActionLink(" ", "Account", "Home", new { id = Request.Cookies["idCook"].Value }, new { @class = "nav-link collapseExample3 AccIMG" })</button>
+                        }
+                        @if (User.Identity.IsAuthenticated == false)
+                        {
+                        <button class="navbar-toggler collapsed" style="border: none; opacity: 0.78; "><a href="@Url.Content("~/Home/Registration")"><img src="@Url.Content("https://img.icons8.com/windows/45/000000/gender-neutral-user.png")" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"></a></button>
+                        }
                         <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02" style="margin-top: 0.7rem;">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
@@ -66,7 +74,7 @@
                                         </div>
                                     </li>
                                 }
-                                </ul>
+                            </ul>
                         </div>
                     </nav>
                 </div>
