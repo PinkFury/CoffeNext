@@ -1,0 +1,61 @@
+﻿
+@{
+    ViewBag.Title = "Communicate";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<center>
+    <img src="@Url.Content("~/img/banner.png")" class="bannerpicture mt-2">
+    <img src="@Url.Content("~/img/Sticker.png")" class="sticker" width="120" height="120">
+</center>
+<hr style="max-width: 62rem;">
+
+<div class="container py-3">
+    <div class="row ml-5 mr-5">
+        <div class="col-lg-12">
+            <p class="lead">Мы открыты для любых предложений!</p>
+            <form id="contact-form" method="post" role="form">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="inputEmail" class="control-label">Email *</label>
+                            <input type="email" class="form-control" name="senderEmail" id="inputEmail" placeholder="Email" data-error="Введите валидный адрес." required>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="form_phone">Телефон (не обязательно)</label>
+                            <input id="form_phone" type="tel" name="PhoneNumber" class="form-control" placeholder="Укажите номер Вашего телефона">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="form_message">Сообщение *</label>
+                            <textarea id="form_message" name="Message" class="form-control" rows="4" required data-error=""></textarea>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <!-- data-sitekey ---- https://www.google.com/recaptcha/admin -->
+                            <div class="g-recaptcha" data-sitekey="6LfKURIUAAAAAO50vlwWZkyK_G2ywqE52NU7YO0S"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <input type="submit" class="btn btn-success btn-send" id="submit_mess" value="Отправить">
+                    </div>
+                </div>
+            </form>
+        </div><!-- /.col-lg-8 col-lg-offset-2 -->
+    </div> <!-- /.row-->
+
+</div> <!-- /.container-->

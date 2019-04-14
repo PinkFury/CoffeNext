@@ -1,0 +1,194 @@
+﻿
+@{
+    ViewBag.Title = "Feedback";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <center>
+        <img src="@Url.Content("~/img/otziv12.png")" height="150" class="img_main_comments">
+    </center>
+
+    <div class="row mt-4">
+        <div class="col-sm-6">
+            <div class="testimonial testimonial-default">
+                <div class="testimonial-section">
+                    Спасибо енотику за кофе! Очень вкусный, удачно зашла на Сухаревской ;)
+                    <hr>
+                    <div class="row">
+                        <img src="@Url.Content("~/img/comments/1.png")">
+                    </div>
+                </div>
+                <div class="testimonial-desc">
+                    <img src="@Url.Content("~/img/sticker.png")" alt="" />
+                    <div class="testimonial-you">
+                        <div class="testimonial-you-name">Екатерина</div>
+                        <a href="#" class="testimonial-you-company">inst: none</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="testimonial testimonial-danger">
+                <div class="testimonial-section">
+                    20% скидка для студентов... Весёлый бариста очень соответствует вашей тематике)
+                    <hr>
+                    <div class="row">
+                        <img src="@Url.Content("~/img/comments/2.png")">
+                    </div>
+                </div>
+                <div class="testimonial-desc">
+                    <img src="@Url.Content("~/img/sticker.png")" alt="" />
+                    <div class="testimonial-you">
+                        <div class="testimonial-you-name">Фёдор</div>
+                        <a href="#" class="testimonial-you-company">inst: deagler_freddie</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="testimonial testimonial-warning">
+                <div class="testimonial-section">
+                    Вкусно Кофе действительно сближает людей ☕️☕️☕
+                    Спасибо за кофе (и за скидку)!️
+                    <hr>
+                    <div class="row">
+                        <img src="@Url.Content("~/img/comments/3.png")">
+                    </div>
+                </div>
+                <div class="testimonial-desc">
+                    <img src="@Url.Content("~/img/sticker.png")" alt="" />
+                    <div class="testimonial-you">
+                        <div class="testimonial-you-name">Дмитрий</div>
+                        <a href="#" class="testimonial-you-company">inst: dimo_ralkin</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="testimonial testimonial-success">
+                <div class="testimonial-section">
+                    Со 💚Вкусно Кофе💗 и походы в салон не такие утомительные!
+                    Привет кофеманам)
+                    <hr>
+                    <div class="row">
+                        <img src="@Url.Content("~/img/comments/4.png")">
+                    </div>
+                </div>
+                <div class="testimonial-desc">
+                    <img src="@Url.Content("~/img/sticker.png")" alt="" />
+                    <div class="testimonial-you">
+                        <div class="testimonial-you-name">Анастасия</div>
+                        <a href="#" class="testimonial-you-company">inst: an_smirnova</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="testimonial testimonial-info">
+                <div class="testimonial-section">
+                    ВкусноКофе выручает даже в самые ответственные моменты. Хорошая погода и хороший кофе, очень рад)
+                    <hr>
+                    <div class="row">
+                        <img src="@Url.Content("~/img/comments/5.png")">
+                    </div>
+                </div>
+                <div class="testimonial-desc">
+                    <img src="@Url.Content("~/img/sticker.png")" alt="" />
+                    <div class="testimonial-you">
+                        <div class="testimonial-you-name">Вадим</div>
+                        <a href="#" class="testimonial-you-company">inst: vava_nikolaev</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="testimonial testimonial-primary">
+                <div class="testimonial-section">
+                    На улице - 16 градусов ❄️
+                    Но вы разогрели своим вкусным и горячим напитком!
+                    Выпечка - супер :D
+                    <hr>
+                    <div class="row">
+                        <img src="@Url.Content("~/img/comments/6.png")">
+                    </div>
+                </div>
+                <div class="testimonial-desc">
+                    <img src="@Url.Content("~/img/sticker.png")" alt="" />
+                    <div class="testimonial-you">
+                        <div class="testimonial-you-name">Игорь</div>
+                        <a href="#" class="testimonial-you-company">inst: none</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <br>
+    <div class="col-lg-12" id="feedForm">
+        <center>
+            <p class="lead">Оставьте свой отзыв и получите 80 баллов!</p>
+        </center>
+        @if(User.Identity.IsAuthenticated == true) { 
+        <iframe class="col-lg-12" src="@Url.Action("Feedback", "Home", new {id = Request.Cookies["idCook"].Value})" />
+            }
+        @if(User.Identity.IsAuthenticated == false) {
+        <div id="belowForm" class="col-lg-12 testimonial-section">
+            <div class="col-lg-12">
+                <p class="lead">Зарегестрируйтесь, чтобы оставить свой отзыв!</p>
+            </div>
+        </div>
+            <form id="contact-form" method="post" action="#" role="form">
+            <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="feedEmail" class="control-label">Имя</label>
+                    <input type="email" class="form-control" id="feedEmail" data-error="Введите валидный адрес." required disabled>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="InstUserName">Аккаунт Instagram</label>
+                    <input id="form_phone" type="tel" name="" class="form-control" value="" disabled>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="Feedback">Отзыв:</label>
+                    <textarea id="form_message" name="" class="form-control" rows="4" required data-error="" placeholder="Для того, чтобы оставить отзыв, нужно авторизоваться!" disabled></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            @if (User.Identity.IsAuthenticated == true)
+            {
+                <div class="col-md-12">
+                    <center>
+                        <input type="submit" class="btn btn-success btn-send" id="submit_mess" value="Отправить">
+                    </center>
+                </div>
+            }
+            @if (User.Identity.IsAuthenticated == false)
+            {
+                <div class="col-md-12">
+                    <center>
+                        <span title="Для того, чтобы оставить отзыв, нужно авторизоваться!"><input type="submit" class="btn btn-success btn-send" id="submit_mess" disabled value="Отправить" data-toggle="tooltip"></span>
+                    </center>
+                </div>
+            }
+        </div>
+        </form>
+        }
+    </div><!-- /.col-lg-8 col-lg-offset-2 -->
+</div>
+

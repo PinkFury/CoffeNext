@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 @using CoffeeNext.Controllers;
 @using CoffeeNext.Models;
 <html>
@@ -49,8 +49,8 @@
                                     </a>
                                     <div class="collapse" id="collapseExample2">
                                         <div class="nav-link collapseExample2" aria-labelledby="navbarDropdownMenuLink">
-                                            <a class="nav-link collapseExample2" href="#">Сотрудничество</a>
-                                            <a class="nav-link collapseExample2" href="#">Отзыв</a>
+                                            <a class="nav-link collapseExample2" href="@Url.Content("~/Home/Communicate")">Сотрудничество</a>
+                                            <a class="nav-link collapseExample2" href="@Url.Content("~/Home/FeedbackPage")">Отзыв</a>
                                         </div>
                                     </div>
                                 </li>
@@ -69,7 +69,7 @@
                                             <div class="nav-link collapseExample3" aria-labelledby="navbarDropdownMenuLink">
                                                 <a class="nav-link collapseExample3" id="toModal" data-toggle="modal" data-target="#exampleModal" href="#">Авторизация</a>
                                                 <a class="nav-link collapseExample3" href="@Url.Content("~/Home/Registration/1")">Регистрация</a>
-                                                <a class="nav-link collapseExample3" href="@Url.Content("~/Home/Login")">Балловая система</a>
+                                                <a class="nav-link collapseExample3" href="@Url.Content("~/Home/ScoreSystem")">Балловая система</a>
                                             </div>
                                         </div>
                                     </li>

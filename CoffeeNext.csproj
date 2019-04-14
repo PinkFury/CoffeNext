@@ -143,9 +143,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Database2.mdf" />
-    <Content Include="App_Data\Database2_log.ldf">
-      <DependentUpon>Database2.mdf</DependentUpon>
+    <Content Include="App_Data\Users.mdf" />
+    <Content Include="App_Data\Users_log.ldf">
+      <DependentUpon>Users.mdf</DependentUpon>
     </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -173,6 +173,12 @@
     <Content Include="img\ad\advertisement1.jpg" />
     <Content Include="img\ad\advertisement11.jpg" />
     <Content Include="img\banner.png" />
+    <Content Include="img\comments\1.png" />
+    <Content Include="img\comments\2.png" />
+    <Content Include="img\comments\3.png" />
+    <Content Include="img\comments\4.png" />
+    <Content Include="img\comments\5.png" />
+    <Content Include="img\comments\6.png" />
     <Content Include="img\favicon.ico" />
     <Content Include="img\favicon1.png" />
     <Content Include="img\Fon.png" />
@@ -184,6 +190,7 @@
     <Content Include="img\instt.png" />
     <Content Include="img\instt2.png" />
     <Content Include="img\instttt.png" />
+    <Content Include="img\logo-face.png" />
     <Content Include="img\logo.tif" />
     <Content Include="img\logo1.png" />
     <Content Include="img\logo115.png" />
@@ -214,6 +221,7 @@
     <Content Include="img\Mosmetro.png" />
     <Content Include="img\NDl8aRRbWlw.jpg" />
     <Content Include="img\newlogo1.png" />
+    <Content Include="img\otziv12.png" />
     <Content Include="img\Screenshot_1.jpg" />
     <Content Include="img\Screenshot_2.jpg" />
     <Content Include="img\slider\1.jpg" />
@@ -277,15 +285,19 @@
     </Content>
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\Registration.cshtml" />
     <Content Include="Views\Shared\Regis.cshtml" />
-    <Content Include="Views\Home\Menu.cshtml" />
-    <Content Include="Views\Home\Adress.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Account.cshtml" />
+    <Content Include="Views\Home\Adress.cshtml" />
+    <Content Include="Views\Home\Communicate.cshtml" />
+    <Content Include="Views\Home\FeedbackPage.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Home\Menu.cshtml" />
+    <Content Include="Views\Home\Registration.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Feedback.cshtml" />
+    <Content Include="Views\Home\ScoreSystem.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

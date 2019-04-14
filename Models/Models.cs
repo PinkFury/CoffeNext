@@ -25,4 +25,20 @@ namespace CoffeeNext.Models
         [Required]
         public string Password { get; set; }
     }
+    public class CommunicateModel
+    {
+        [Required]
+        public string senderEmail { get; set; }
+        [Required]
+        public string Message { get; set; }
+        public string PhoneNumber { get; set;}
+    }
+    public class FeedbackModel
+    {
+        [Required]
+        public string feedEmail { get; set; }
+        [Required]
+        public string Feedback { get; set; }
+        public string InstUserName { get; set;}
+    }
 }

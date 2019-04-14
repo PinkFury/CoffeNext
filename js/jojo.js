@@ -19,3 +19,14 @@ function Check_Password() {
         document.getElementById( "wrongPw" ).style.display = "block; !important";
     }
 }
+function checkParams() {
+    var mess = $( '#form_message' ).val();
+    var email = $( '#inputEmail' ).val();
+    var phone = $( '#form_phone' ).val();
+
+    if ( mess.length != 0 && email.length != 0 && phone.length != 0 ) {
+        $( '#submit_mess' ).removeAttr( 'disabled' );
+    } else {
+        $( '#submit_mess' ).attr( 'disabled', 'disabled' );
+    }
+}

@@ -5,7 +5,7 @@ using System.Web;
 using System.Data.Entity;
 namespace CoffeeNext.Models
 {
-    public class UserDbInitializer: DropCreateDatabaseAlways<UserContext>
+    public class UserDbInitializer: CreateDatabaseIfNotExists<UserContext>
     {
         protected override void Seed(UserContext db)
         {

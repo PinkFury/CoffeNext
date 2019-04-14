@@ -1,0 +1,54 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="@Url.Content("~/img/favicon1.png")" type="image/png">
+    <link href="@Url.Content("~/css/jojo.css")" rel="stylesheet" type="text/css">
+    <link href="@Url.Content("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css")" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body id="feedFom">
+    <form id="contact-form" method="post" action="#" role="form">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="feedEmail" class="control-label">Имя</label>
+                    <input type="text" class="form-control" id="feedEmail" name="feedEmail" data-error="Введите имя" required>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="InstUserName">Аккаунт Instagram</label>
+                    <input id="form_phone" type="tel" name="InstUserName" class="form-control" value="">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="Feedback">Отзыв:</label>
+                    <textarea id="form_message" name="Feedback" class="form-control" rows="4" required data-error=""></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+                <div class="col-md-12">
+                    <center>
+                        <input type="submit" class="btn btn-success btn-send" id="submit_mess" value="Отправить">
+                    </center>
+                </div>
+        </div>
+    </form>
+</body>
+</html>
