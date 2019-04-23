@@ -6,17 +6,24 @@
 
 <body>
     <center>
-        <div class="container">
+        <div class="container mt-5 mb-5">
+            <hr>
+            <hr style="max-width: 25rem;">
             <div class="row">
-                <div class="col-md-8">
-                <img src="@Url.Content("~/img/Sticker.jpg")" id="StickAc" class="my-auto">
-                <div>
-                <p class="lead">Здравствуйте, @ViewBag.UserName</p>
-                <p class="lead">У вас @ViewBag.Points баллов</p>
-                @Html.ActionLink("Выход","Logout", "Home", null, new {@class = "btn btn-primary"})
+                <div class="col-md-4"><img src="@Url.Content("~/img/tilda.png")" class="tilda ml-4"></div>
+                <div class="col-md-4">
+                    <p class="lead">Здравствуйте, @ViewBag.UserName</p>
+                    <img src="@Url.Content("~/img/Sticker.jpg")" id="StickAc" class="my-auto">
+                    <div>
+                        <p class="lead mt-3">У вас @ViewBag.Points баллов</p>
+                        <p class="undLead">@Html.ActionLink("Подробнее", "ScoreSystem", "Home")</p>
+                        @Html.ActionLink("Выход", "Logout", "Home", null, new { @class = "btn btn-primary" })
+                    </div>
                 </div>
-                </div>
+                <div class="col-md-4"><img src = "@Url.Content("~/img/tilda.png")" class="tilda2"></div>
             </div>
+            <hr style="max-width: 25rem;">
+            <hr>
         </div>
     </center>
 </body>

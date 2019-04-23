@@ -1470,3 +1470,32 @@ iframe{
         text-align: center;
     }
 }
+/* --------- "ACCOUNT" PAGE --------- */
+#StickAc {
+    width: 10rem;
+    border: 2px solid #00a8e1;
+    border-radius: 85px;
+}
+
+.undLead, .undLead a {
+    margin-top: -0.5rem;
+    text-decoration: none;
+    padding-bottom: 2rem;
+}
+
+.tilda, .tilda2 {
+    width: 10rem;
+    margin-top: 6rem;
+    opacity: 0.06;
+    display: block;
+}
+
+.tilda2 {
+    transform: scale(-1, 1)
+}
+
+@media only screen and (max-width: 767px) {
+    .tilda, .tilda2 {
+        display: none;
+    }
+}

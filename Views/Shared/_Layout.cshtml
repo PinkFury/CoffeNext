@@ -32,7 +32,7 @@
                         }
                         @if (User.Identity.IsAuthenticated == false)
                         {
-                        <button class="navbar-toggler collapsed" style="border: none; opacity: 0.78; "><a href="@Url.Content("~/Home/Registration")"><img src="@Url.Content("https://img.icons8.com/windows/45/000000/gender-neutral-user.png")" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"></a></button>
+                        <button class="navbar-toggler collapsed" style="border: none; opacity: 0.78; "><a id="toModal" data-toggle="modal" data-target="#exampleModal" href="#"><img src="@Url.Content("https://img.icons8.com/windows/45/000000/gender-neutral-user.png")"></a></button>
                         }
                         <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02" style="margin-top: 0.7rem;">
                             <ul class="navbar-nav">
@@ -89,6 +89,9 @@
                                 <input class="form-control mx-auto" id="logPass" type="password" name="Password" placeholder="Пароль" required>
                                 <div class="text-xs-center">
                                     <input type="submit" class="btn btn-primary btn-lg btn-block mx-auto" id="LogBut" value="Войти на сайт">
+                                </div>
+                                <div>
+                                    @Html.ActionLink("Нет аккаунта? Зарегестрируйтесь", "Registration", "Home", new { @class = "text-xs-center" })
                                 </div>
                             </form>
                             <!--<iframe id="logForm" class="embed-responsive-item my-auto" src="" allowfullscreen></iframe>-->
