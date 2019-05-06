@@ -805,11 +805,16 @@ a.InstText {
         font-size: 140%;
     }
     /*----------COMMUNICATE END -------- */
-    /* —-----— "COMMENTS" PAGE —-----— */
+    /* Â—-----Â— "COMMENTS" PAGE Â—-----Â— */
     .testimonial {
         margin-bottom: 10px;
     }
-
+    @media only screen and (max-width: 402px){ 
+        .img_main_comments{ 
+        width: 17.5rem; 
+        height: auto; 
+        } 
+     }
     .testimonial-section {
         width: 100%;
         height: auto;
@@ -1198,7 +1203,7 @@ iframe{
 #feedFom{
     overflow-x:hidden;
 }
-/* —-----— "BALL SYSTEM" PAGE —-----— */
+/* Â—-----Â— "BALL SYSTEM" PAGE Â—-----Â— */
 #special-text {
     color: red;
 }
