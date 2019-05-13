@@ -786,16 +786,6 @@ a.InstText {
     #textbutton {
         color: white;
     }
-    /* --------- "ACCOUNT" BEG --------- */
-    #StickAc {
-        width: 6rem;
-        height: 6rem;
-    }
-
-    .display-4 {
-        color: #13a081;
-    }
-    /* --------- "ACCOUNT" END --------- */
     /*----------COMMUNICATE BEGIN -------- */
     #form_message {
         min-height: 9rem;
@@ -1477,11 +1467,14 @@ iframe{
 }
 /* --------- "ACCOUNT" PAGE --------- */
 #StickAc {
-    width: 10rem;
+    width: 6rem;
+    height: 6rem;
     border: 2px solid #00a8e1;
     border-radius: 85px;
 }
-
+.display-4 {
+    color: #13a081;
+}
 .undLead, .undLead a {
     margin-top: -0.5rem;
     text-decoration: none;
